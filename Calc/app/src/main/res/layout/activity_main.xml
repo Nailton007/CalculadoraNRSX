@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android&quot;
+    xmlns:app="http://schemas.android.com/apk/res-auto&quot;
+    xmlns:tools="http://schemas.android.com/tools&quot;
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<TextView
+android:id="@+id/titulo"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="44dp"
+android:text="Calculadora"
+android:textColor="@color/azul"
+android:textSize="40dp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.497"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+android:id="@+id/textView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="28dp"
+android:text="Digite o Primeiro Valor"
+android:textSize="30dp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+<EditText
+android:id="@+id/valor1"
+android:layout_width="237dp"
+android:layout_height="52dp"
+android:layout_marginTop="12dp"
+android:ems="10"
+android:inputType="number"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+<TextView
+android:id="@+id/textView2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:text="Digite o Segundo Valor"
+android:textSize="30dp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.495"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/valor1" />
+
+<EditText
+android:id="@+id/valor2"
+android:layout_width="237dp"
+android:layout_height="50dp"
+android:layout_marginTop="24dp"
+android:ems="10"
+android:inputType="number"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+<TextView
+android:id="@+id/resultado"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+android:text="Resultado"
+android:textSize="30dp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.498"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/valor2" />
+
+<Button
+android:id="@+id/multiplicacao"
+android:layout_width="134dp"
+android:layout_height="64dp"
+android:layout_marginTop="52dp"
+android:text="X"
+android:textSize="30dp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.137"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+<Button
+android:id="@+id/divisao"
+android:layout_width="134dp"
+android:layout_height="64dp"
+android:layout_marginTop="52dp"
+android:text="÷"
+android:textSize="30dp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.514"
+app:layout_constraintStart_toEndOf="@+id/multiplicacao"
+app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+<Button
+android:id="@+id/soma"
+android:layout_width="134dp"
+android:layout_height="64dp"
+android:layout_marginTop="28dp"
+android:text="+"
+android:textSize="30dp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.137"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/multiplicacao" />
+
+<Button
+android:id="@+id/button4"
+android:layout_width="134dp"
+android:layout_height="64dp"
+android:layout_marginTop="28dp"
+android:text="-"
+android:textSize="30dp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.504"
+app:layout_constraintStart_toEndOf="@+id/soma"
+app:layout_constraintTop_toBottomOf="@+id/divisao" />
+
+<Button
+android:id="@+id/button5"
+android:layout_width="198dp"
+android:layout_height="52dp"
+android:layout_marginTop="24dp"
+android:backgroundTint="@color/azul"
+android:text="Enter"
+android:textSize="30dp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.497"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/button4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
